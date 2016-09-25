@@ -9,9 +9,10 @@ def signup_form():
     modal = False
     if request.method == 'POST':
         with open(file_loc,'a') as f:
+            name = request.form["name"]
             email = request.form["email"]
             if email:
-                f.write(email + ",\n")
+                f.write(name + ", " + email + ",\n")
                 modal = True
     return render_template('signup_form.html', modal=modal)
 
