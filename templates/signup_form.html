@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='looks.css') }}">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <script>
+    function onLoad() {
+      $('#Success').modal('show');
+    }
+  </script>
+</head>
+<body onload="onLoad()">
+  <!-- Modal -->
+  <div class="modal fade vcenter" id="Success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Thanks for registering interest!</h4>
+        </div>
+        <div class="modal-body">
+          We'll email you when our next meeting is.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="vcenter">
+  <div class="container">
+  <div class="row">
+    <div class="Absolute-Center is-Responsive">
+      <div id="logo-container"> <img src="https://srobo.github.io/style/assets/logo-white.svg"/><h1>STUDENT ROBOTICS</h1></div>
+      <div class="col-sm-12 col-md-10 col-md-offset-1">
+        <form action="" id="loginForm" method="post" autocomplete="off">
+          <div class="form-group input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+            <input class="form-control" type="text" name='email' placeholder="email"/>
+          </div>
+          <!-- <div class="form-group input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input class="form-control" type="text" name='name' placeholder="name"/>
+          </div> -->
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">Register Interest</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</body>
+</html>
