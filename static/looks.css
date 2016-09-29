@@ -1,9 +1,14 @@
 body {
-  background-color: #243373;
-  #background-color: #000; # Powersave mode!
+  #background-color: #243373;
+  background-color: #000; # Powersave mode!
 }
 
 h1 {
   font-family: 'Oswald', sans-serif;
   color: white;
+}
+
+.btn-primary {
+    background-color: #500000;
+    border-color: #300000;  
 }
