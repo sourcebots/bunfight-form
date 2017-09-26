@@ -4,7 +4,7 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='looks.css') }}">
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:600" rel="stylesheet">
   <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -47,19 +47,19 @@
   <div class="container">
   <div class="row">
     <div class="Absolute-Center is-Responsive">
-      <div id="logo-container"> <img src="https://srobo.github.io/style/assets/logo-white.svg"/><h1>STUDENT ROBOTICS</h1></div>
+      <div id="logo-container"> <h1>SOUTHAMPTON COMPETITIVE</br>ROBOTICS OUTREACH</h1></div>
       <div class="col-sm-12 col-md-10 col-md-offset-1">
         <form action="" id="registerForm" method="get" onsubmit="postForm(); return false;" autocomplete="off">
-          <div class="form-group input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-            <input class="form-control" type="text" name='email' placeholder="email"/>
-          </div>
           <div class="form-group input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
             <input class="form-control" type="text" name='name' placeholder="name"/>
           </div>
+          <div class="form-group input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+            <input class="form-control" type="text" name='email' placeholder="email"/>
+          </div>
           <div class="form-group">
-            <button type="submit" class="btn btn-primary btn-block">Register Interest</button>
+            <button type="submit" class="btn scro-btn btn-block">Register Interest</button>
           </div>
         </form>
       </div>

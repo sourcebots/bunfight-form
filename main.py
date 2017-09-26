@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from email.utils import parseaddr
+from csv import DictWriter
 app = Flask(__name__)
 
 file_loc = "details.csv"
@@ -9,10 +10,11 @@ def signup_form():
     modal = False
     if request.method == 'POST':
         with open(file_loc,'a') as f:
-            name = request.form["name"]
-            email = request.form["email"]
-            if email:
-                f.write(name + ", " + email + ",\n")
+            fieldnames = ['name', 'email']
+            csvwriter = DictWriter(f, fieldnames)
+            response = request.form.to_dict()
+            if response['email']:
+                csvwriter.writerow(response)
                 modal = True
     return render_template('signup_form.html', modal=modal)
 

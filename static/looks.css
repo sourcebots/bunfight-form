@@ -1,9 +1,15 @@
 body {
-  background-color: #243373;
+  background-color: #2d6b11;
   #background-color: #000; # Powersave mode!
 }
 
 h1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: white;
+}
+
+.scro-btn {
+  color: #fff;
+  background-color: #193d09;
+  border-color: #0d2104;
 }
